@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Collaborative Canvas</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Collaborative Canvas</h1>
+    <div id="controls">
+      <button id="undo">Undo</button>
+      <button id="redo">Redo</button>
+      <input id="color" type="color" value="#000000" />
+      <input id="size" type="range" min="1" max="40" value="4" />
+      <button id="eraser">Eraser</button>
+    </div>
+  </header>
+  <main>
+    <canvas id="canvas"></canvas>
+    <div id="users"></div>
+  </main>
+  <script src="/websocket.js"></script>
+  <script src="/canvas.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
